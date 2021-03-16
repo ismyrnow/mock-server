@@ -17,4 +17,4 @@ Changes to files, including the response configuration, automatically reload the
 
 ## Contributing
 
-I will likely not be accepting pull requests, or responding to issues. Without automated tests, I would need to manually check that changes don't break things, and I don't have the time for that. Feel free to fork this project instead.
+I will likely not be accepting pull requests. Without automated tests, I would need to manually check that changes don't break things, and I don't have the time for that. Feel free to fork this project instead.
