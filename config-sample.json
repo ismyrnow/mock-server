@@ -1,0 +1,7 @@
+{
+  "port": 8000,
+  "cors": true,
+  "delay": 1000,
+  "status": 200,
+  "body": {"yo": "dawg"}
+}

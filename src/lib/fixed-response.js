@@ -1,10 +1,23 @@
 const express = require("express");
 const router = express.Router();
 
-const fixedResponse = ({ statusCode, body }) => (req, res) => {
+const fixedResponse = (config) => (req, res) => {
+  const delay = config.delay || 0;
+  const statusCode = config.statusCode;
+  const contentType = config.contentType;
+  const body = config.body || null;
+
   setTimeout(() => {
-    res.status(statusCode).send(body);
-  }, 1000);
+    if (statusCode) {
+      res.status(statusCode);
+    }
+
+    if (contentType) {
+      res.type(contentType);
+    }
+
+    res.send(body);
+  }, delay);
 };
 
 module.exports = fixedResponse;
